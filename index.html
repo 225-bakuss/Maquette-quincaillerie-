@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -8,45 +9,51 @@
 </head>
 <body>
   <header>
-    <h1>🔩 Quincaillerie Moderne</h1>
-    <p>Tout pour vos besoins en construction, bricolage et équipements</p>
-    <a href="#contact" class="cta-button">Demander un devis gratuit</a>
+    <h1>🛠️ Quincaillerie Moderne</h1>
+    <p>Outils de qualité à prix abordables – Commandez en ligne !</p>
   </header>
 
-  <section id="produits">
-    <h2>Nos Produits</h2>
-    <div class="product-grid">
-      <div class="product">
-        <img src="https://img.icons8.com/ios/100/hammer.png" alt="Marteau" />
-        <h3>Marteaux</h3>
-        <p>Robustes et ergonomiques, parfaits pour tout usage</p>
-      </div>
-      <div class="product">
-        <img src="https://img.icons8.com/ios/100/wrench.png" alt="Clé" />
-        <h3>Clés & Outils</h3>
-        <p>Outils de qualité pour professionnels et bricoleurs</p>
-      </div>
-      <div class="product">
-        <img src="https://img.icons8.com/ios/100/screws.png" alt="Visserie" />
-        <h3>Visserie</h3>
-        <p>Toutes tailles de vis, chevilles, boulons…</p>
-      </div>
+  <section class="catalogue">
+    <div class="product">
+      <img src="https://img.icons8.com/ios/100/hammer.png" alt="Marteau" />
+      <h2>Marteau de charpentier</h2>
+      <p>Manche bois renforcé, usage pro.</p>
+      <span class="price">3 500 FCFA</span>
+    </div>
+    <div class="product">
+      <img src="https://img.icons8.com/ios/100/wrench.png" alt="Clé à molette" />
+      <h2>Clé à molette 8"</h2>
+      <p>Acier trempé, haute résistance.</p>
+      <span class="price">1 500 FCFA</span>
+    </div>
+    <div class="product">
+      <img src="https://img.icons8.com/ios/100/screws.png" alt="Vis" />
+      <h2>Lot de vis 5mm (x50)</h2>
+      <p>Idéal pour bois et plastique.</p>
+      <span class="price">2 000 FCFA</span>
     </div>
   </section>
 
-  <section id="apropos">
-    <h2>Pourquoi nous choisir ?</h2>
-    <p>Entreprise locale avec plus de 5 ans d’expérience. Livraison rapide, produits de qualité et service client disponible 7j/7. Faites confiance à une quincaillerie sérieuse.</p>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>📞 05 56 10 92 25 | 📍 Bouaké | 💬 WhatsApp : <a href="https://wa.me/2250556109225" target="_blank">Cliquez ici</a></p>
-    <a href="#" class="cta-button">Voir catalogue complet</a>
+  <section class="order">
+    <h2>📦 Passer une commande</h2>
+    <form action="https://formsubmit.co/your@email.com" method="POST">
+      <input type="text" name="nom" placeholder="Nom complet" required />
+      <input type="tel" name="telephone" placeholder="Téléphone WhatsApp" required />
+      <select name="produit" required>
+        <option value="">-- Choisissez un produit --</option>
+        <option value="Marteau de charpentier">Marteau de charpentier - 3 500 FCFA</option>
+        <option value="Clé à molette 8">Clé à molette 8" - 1 500 FCFA</option>
+        <option value="Lot de vis 5mm">Lot de vis 5mm - 2 000 FCFA</option>
+      </select>
+      <input type="number" name="quantite" placeholder="Quantité" required />
+      <textarea name="adresse" placeholder="Adresse de livraison" required></textarea>
+      <button type="submit">Commander</button>
+    </form>
+    <p style="text-align:center;">⚠️ Une fois envoyée, vous serez contacté par WhatsApp pour la confirmation.</p>
   </section>
 
   <footer>
-    <p>© 2025 Quincaillerie Moderne. Propulsé par Bakuss Web Services</p>
+    <p>© 2025 Quincaillerie Moderne – Créé par Bakuss Web Services</p>
   </footer>
 </body>
 </html>
