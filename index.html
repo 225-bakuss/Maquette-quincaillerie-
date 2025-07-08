@@ -1,58 +1,44 @@
 
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Quincaillerie Moderne - Boutique</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToolPart - Quincaillerie Moderne</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>🛠️ Quincaillerie Moderne</h1>
-        <p>Votre boutique d'outils en ligne</p>
-        <div id="cart">
-            🛒 <span id="cart-count">0</span> article(s)
-        </div>
-    </header>
-
-    <main>
-        <section class="products">
-            <div class="product">
-                <img src="https://img.icons8.com/ios/100/hammer.png" alt="Marteau" />
-                <h2>Marteau</h2>
-                <p>Manche bois renforcé</p>
-                <span class="price">3 500 FCFA</span>
-                <button onclick="addToCart('Marteau', 3500)">Ajouter au panier</button>
-            </div>
-            <div class="product">
-                <img src="https://img.icons8.com/ios/100/wrench.png" alt="Clé" />
-                <h2>Clé à molette</h2>
-                <p>Acier trempé</p>
-                <span class="price">1 500 FCFA</span>
-                <button onclick="addToCart('Clé à molette', 1500)">Ajouter au panier</button>
-            </div>
-            <div class="product">
-                <img src="https://img.icons8.com/ios/100/drill.png" alt="Perceuse" />
-                <h2>Perceuse</h2>
-                <p>Électrique multifonction</p>
-                <span class="price">12 000 FCFA</span>
-                <button onclick="addToCart('Perceuse', 12000)">Ajouter au panier</button>
-            </div>
-        </section>
-
-        <section class="checkout">
-            <h2>🧾 Votre commande</h2>
-            <ul id="cart-items"></ul>
-            <p>Total : <strong><span id="total">0</span> FCFA</strong></p>
-            <a id="whatsapp-link" href="#" target="_blank">Commander via WhatsApp</a>
-        </section>
-    </main>
-
-    <footer>
-        <p>© 2025 Quincaillerie Moderne – Créé par Bakuss Web Services</p>
-    </footer>
-
-    <script src="script.js"></script>
+  <header>
+    <div class="container">
+      <h1 class="logo">🛠️ ToolPart</h1>
+      <nav>
+        <a href="#">Accueil</a>
+        <a href="#">Produits</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="hero-text">
+      <h2>OUTILS DE QUALITÉ</h2>
+      <p>Solides et fiables pour chaque travail.</p>
+      <a href="#" class="btn">Commander maintenant</a>
+    </div>
+    <div class="hero-image">
+      <img src="images/cordless_drill.png" alt="Cordless Drill">
+    </div>
+  </section>
+  <section class="products">
+    <h2>Produits phares</h2>
+    <div class="product-list">
+      <div class="product"><img src="images/hammer.png" alt="Claw Hammer"><p>Marteau - 9 000 FCFA</p></div>
+      <div class="product"><img src="images/cordless_drill.png" alt="Drill"><p>Perceuse - 72 000 FCFA</p></div>
+      <div class="product"><img src="images/pliers.png" alt="Pliers"><p>Pince - 10 800 FCFA</p></div>
+      <div class="product"><img src="images/level.png" alt="Level"><p>Niveau - 11 400 FCFA</p></div>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2025 ToolPart CI - Tous droits réservés</p>
+  </footer>
 </body>
 </html>
