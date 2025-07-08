@@ -2,58 +2,57 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Quincaillerie Moderne</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Quincaillerie Moderne - Boutique</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>🛠️ Quincaillerie Moderne</h1>
-    <p>Outils de qualité à prix abordables – Commandez en ligne !</p>
-  </header>
+    <header>
+        <h1>🛠️ Quincaillerie Moderne</h1>
+        <p>Votre boutique d'outils en ligne</p>
+        <div id="cart">
+            🛒 <span id="cart-count">0</span> article(s)
+        </div>
+    </header>
 
-  <section class="catalogue">
-    <div class="product">
-      <img src="https://img.icons8.com/ios/100/hammer.png" alt="Marteau" />
-      <h2>Marteau de charpentier</h2>
-      <p>Manche bois renforcé, usage pro.</p>
-      <span class="price">3 500 FCFA</span>
-    </div>
-    <div class="product">
-      <img src="https://img.icons8.com/ios/100/wrench.png" alt="Clé à molette" />
-      <h2>Clé à molette 8"</h2>
-      <p>Acier trempé, haute résistance.</p>
-      <span class="price">1 500 FCFA</span>
-    </div>
-    <div class="product">
-      <img src="https://img.icons8.com/ios/100/screws.png" alt="Vis" />
-      <h2>Lot de vis 5mm (x50)</h2>
-      <p>Idéal pour bois et plastique.</p>
-      <span class="price">2 000 FCFA</span>
-    </div>
-  </section>
+    <main>
+        <section class="products">
+            <div class="product">
+                <img src="https://img.icons8.com/ios/100/hammer.png" alt="Marteau" />
+                <h2>Marteau</h2>
+                <p>Manche bois renforcé</p>
+                <span class="price">3 500 FCFA</span>
+                <button onclick="addToCart('Marteau', 3500)">Ajouter au panier</button>
+            </div>
+            <div class="product">
+                <img src="https://img.icons8.com/ios/100/wrench.png" alt="Clé" />
+                <h2>Clé à molette</h2>
+                <p>Acier trempé</p>
+                <span class="price">1 500 FCFA</span>
+                <button onclick="addToCart('Clé à molette', 1500)">Ajouter au panier</button>
+            </div>
+            <div class="product">
+                <img src="https://img.icons8.com/ios/100/drill.png" alt="Perceuse" />
+                <h2>Perceuse</h2>
+                <p>Électrique multifonction</p>
+                <span class="price">12 000 FCFA</span>
+                <button onclick="addToCart('Perceuse', 12000)">Ajouter au panier</button>
+            </div>
+        </section>
 
-  <section class="order">
-    <h2>📦 Passer une commande</h2>
-    <form action="https://formsubmit.co/your@email.com" method="POST">
-      <input type="text" name="nom" placeholder="Nom complet" required />
-      <input type="tel" name="telephone" placeholder="Téléphone WhatsApp" required />
-      <select name="produit" required>
-        <option value="">-- Choisissez un produit --</option>
-        <option value="Marteau de charpentier">Marteau de charpentier - 3 500 FCFA</option>
-        <option value="Clé à molette 8">Clé à molette 8" - 1 500 FCFA</option>
-        <option value="Lot de vis 5mm">Lot de vis 5mm - 2 000 FCFA</option>
-      </select>
-      <input type="number" name="quantite" placeholder="Quantité" required />
-      <textarea name="adresse" placeholder="Adresse de livraison" required></textarea>
-      <button type="submit">Commander</button>
-    </form>
-    <p style="text-align:center;">⚠️ Une fois envoyée, vous serez contacté par WhatsApp pour la confirmation.</p>
-  </section>
+        <section class="checkout">
+            <h2>🧾 Votre commande</h2>
+            <ul id="cart-items"></ul>
+            <p>Total : <strong><span id="total">0</span> FCFA</strong></p>
+            <a id="whatsapp-link" href="#" target="_blank">Commander via WhatsApp</a>
+        </section>
+    </main>
 
-  <footer>
-    <p>© 2025 Quincaillerie Moderne – Créé par Bakuss Web Services</p>
-  </footer>
+    <footer>
+        <p>© 2025 Quincaillerie Moderne – Créé par Bakuss Web Services</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
