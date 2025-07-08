@@ -1,44 +1,137 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ToolPart - Quincaillerie Moderne</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToolPart CI - Boutique</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1 class="logo">🛠️ ToolPart</h1>
-      <nav>
+<header>
+    <h1>🛠️ ToolPart CI</h1>
+    <nav>
         <a href="#">Accueil</a>
         <a href="#">Produits</a>
         <a href="#">Contact</a>
-      </nav>
+    </nav>
+    <div id="cart">🛒 <span id="cart-count">0</span> article(s)</div>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Équipez-vous comme un pro</h2>
+            <p>Des outils robustes, prêts à l’action</p>
+        
+<div class="product">
+    <img src="saw.png" alt="Scie">
+    <h3>Scie</h3>
+    <p>Manuelle, lame renforcée – 15 000 FCFA</p>
+    <button onclick="addToCart('Scie', 15000)">Ajouter</button>
+</div>
+<div class="product">
+    <img src="toolbox.png" alt="Boîte à outils">
+    <h3>Boîte à outils</h3>
+    <p>Avec 30 outils – 45 000 FCFA</p>
+    <button onclick="addToCart('Boîte à outils', 45000)">Ajouter</button>
+</div>
+<div class="product">
+    <img src="tape_measure.png" alt="Mètre ruban">
+    <h3>Mètre ruban</h3>
+    <p>5m - boîtier antichoc – 4 000 FCFA</p>
+    <button onclick="addToCart('Mètre ruban', 4000)">Ajouter</button>
+</div>
+<div class="product">
+    <img src="screwdriver_set.png" alt="Tournevis">
+    <h3>Tournevis</h3>
+    <p>Set 6 pièces – 8 500 FCFA</p>
+    <button onclick="addToCart('Tournevis', 8500)">Ajouter</button>
+</div>
+<div class="product">
+    <img src="gloves.png" alt="Gants de travail">
+    <h3>Gants</h3>
+    <p>Résistants, taille unique – 3 000 FCFA</p>
+    <button onclick="addToCart('Gants', 3000)">Ajouter</button>
+</div>
+
     </div>
-  </header>
-  <section class="hero">
-    <div class="hero-text">
-      <h2>OUTILS DE QUALITÉ</h2>
-      <p>Solides et fiables pour chaque travail.</p>
-      <a href="#" class="btn">Commander maintenant</a>
+    </section>
+
+    <section class="products">
+        <h2>Nos Produits</h2>
+        <div class="grid">
+            <div class="product">
+                <img src="hammer.png" alt="Marteau">
+                <h3>Marteau</h3>
+                <p>Manche ergonomique – 9 000 FCFA</p>
+                <button onclick="addToCart('Marteau', 9000)">Ajouter</button>
+            </div>
+            <div class="product">
+                <img src="cordless_drill.png" alt="Perceuse">
+                <h3>Perceuse</h3>
+                <p>Sans fil, rechargeable – 72 000 FCFA</p>
+                <button onclick="addToCart('Perceuse', 72000)">Ajouter</button>
+            </div>
+            <div class="product">
+                <img src="pliers.png" alt="Pince">
+                <h3>Pince</h3>
+                <p>Multifonction – 10 800 FCFA</p>
+                <button onclick="addToCart('Pince', 10800)">Ajouter</button>
+            </div>
+            <div class="product">
+                <img src="level.png" alt="Niveau">
+                <h3>Niveau</h3>
+                <p>Niveau magnétique – 11 400 FCFA</p>
+                <button onclick="addToCart('Niveau', 11400)">Ajouter</button>
+            </div>
+        
+<div class="product">
+    <img src="saw.png" alt="Scie">
+    <h3>Scie</h3>
+    <p>Manuelle, lame renforcée – 15 000 FCFA</p>
+    <button onclick="addToCart('Scie', 15000)">Ajouter</button>
+</div>
+<div class="product">
+    <img src="toolbox.png" alt="Boîte à outils">
+    <h3>Boîte à outils</h3>
+    <p>Avec 30 outils – 45 000 FCFA</p>
+    <button onclick="addToCart('Boîte à outils', 45000)">Ajouter</button>
+</div>
+<div class="product">
+    <img src="tape_measure.png" alt="Mètre ruban">
+    <h3>Mètre ruban</h3>
+    <p>5m - boîtier antichoc – 4 000 FCFA</p>
+    <button onclick="addToCart('Mètre ruban', 4000)">Ajouter</button>
+</div>
+<div class="product">
+    <img src="screwdriver_set.png" alt="Tournevis">
+    <h3>Tournevis</h3>
+    <p>Set 6 pièces – 8 500 FCFA</p>
+    <button onclick="addToCart('Tournevis', 8500)">Ajouter</button>
+</div>
+<div class="product">
+    <img src="gloves.png" alt="Gants de travail">
+    <h3>Gants</h3>
+    <p>Résistants, taille unique – 3 000 FCFA</p>
+    <button onclick="addToCart('Gants', 3000)">Ajouter</button>
+</div>
+
     </div>
-    <div class="hero-image">
-      <img src="cordless_drill.png" alt="Cordless Drill">
-    </div>
-  </section>
-  <section class="products">
-    <h2>Produits phares</h2>
-    <div class="product-list">
-      <div class="product"><img src="hammer.png" alt="Claw Hammer"><p>Marteau - 9 000 FCFA</p></div>
-      <div class="product"><img src="cordless_drill.png" alt="Drill"><p>Perceuse - 72 000 FCFA</p></div>
-      <div class="product"><img src="pliers.png" alt="Pliers"><p>Pince - 10 800 FCFA</p></div>
-      <div class="product"><img src="level.png" alt="Level"><p>Niveau - 11 400 FCFA</p></div>
-    </div>
-  </section>
-  <footer>
-    <p>&copy; 2025 ToolPart CI - Tous droits réservés</p>
-  </footer>
+    </section>
+
+    <section class="checkout">
+        <h2>Commande</h2>
+        <ul id="cart-items"></ul>
+        <p>Total : <strong><span id="total">0</span> FCFA</strong></p>
+        <a id="whatsapp-link" href="#" target="_blank">📩 Commander via WhatsApp</a>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 ToolPart CI – Développé par Bakuss Web Services</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>

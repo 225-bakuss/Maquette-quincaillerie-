@@ -1,65 +1,80 @@
 
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-  color: #333;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background: #f1f1f1;
 }
 header {
-  background-color: #222;
-  color: white;
-  padding: 1rem;
-}
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.logo {
-  font-size: 1.5rem;
+    background: #263238;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
 }
 nav a {
-  color: white;
-  margin-left: 1rem;
-  text-decoration: none;
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
 }
 .hero {
-  display: flex;
-  background: #fff3cd;
-  padding: 2rem;
-  justify-content: space-between;
-  align-items: center;
-}
-.hero-text h2 {
-  font-size: 2rem;
-}
-.hero-text p {
-  font-size: 1rem;
-}
-.btn {
-  padding: 0.5rem 1rem;
-  background: #0056b3;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
+    background: linear-gradient(135deg, #00695c, #004d40);
+    color: white;
+    padding: 3rem 2rem;
+    text-align: center;
 }
 .products {
-  padding: 2rem;
-  background: white;
+    padding: 2rem;
+    background: white;
 }
-.product-list {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
 }
 .product {
-  margin: 1rem;
-  text-align: center;
+    background: #fafafa;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.product img {
+    height: 80px;
+}
+button {
+    margin-top: 1rem;
+    padding: 0.6rem 1.2rem;
+    background: #00796b;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.checkout {
+    padding: 2rem;
+    background: #e0f2f1;
+    text-align: center;
+}
+#cart-items {
+    list-style: none;
+    padding: 0;
+}
+#whatsapp-link {
+    display: inline-block;
+    margin-top: 1rem;
+    background: #25D366;
+    color: white;
+    padding: 0.8rem 1.4rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
 }
 footer {
-  text-align: center;
-  background: #222;
-  color: white;
-  padding: 1rem;
+    text-align: center;
+    background: #263238;
+    color: white;
+    padding: 1rem;
 }
