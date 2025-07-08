@@ -28,3 +28,18 @@ function updateCart() {
     const whatsappLink = `https://wa.me/${phone}?text=${message}`;
     document.getElementById('whatsapp-link').href = whatsappLink;
 }
+
+
+function filterProducts() {
+    const input = document.getElementById('searchBar');
+    const filter = input.value.toLowerCase();
+    const products = document.getElementsByClassName('product');
+    for (let i = 0; i < products.length; i++) {
+        const title = products[i].getElementsByTagName("h3")[0].textContent;
+        if (title.toLowerCase().indexOf(filter) > -1) {
+            products[i].style.display = "";
+        } else {
+            products[i].style.display = "none";
+        }
+    }
+}
